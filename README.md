@@ -29,44 +29,45 @@ Este repositorio contiene el desarrollo del **Proyecto 1** de la asignatura **Pr
 - Al final, se indica si el usuario **ganó**.
 
 ## 📂 Estructura del Repositorio
-```
-/ │── README.md # Documentación del proyecto
+``` 
+│── README.md # Documentación del proyecto
 │── informe.pdf # Documento con análisis, pseudocódigo y capturas
-│── problema_3/
-│ └── sudoku.py # Código de Sudoku
-└── pseudocodigo.md # Pseudocódigo del problema 3
+└── problema_3/
+  |─- sudoku.py # Código de Sudoku
+  └── pseudocodigo.md # Pseudocódigo del problema 3
+ 
 ```
 ======================================================================
 ```
-=== ESTAMOS JUGANDO SUDOKU ===
+===========================================================================
+                             REGLAS DEL SUDOKU
+===========================================================================
+1. Se genera un tablero de Sudoku 9x9 con algunos espacios vacíos.
+2. Debes rellenar los espacios vacíos con números del 1 al 9.
+3. No puedes repetir números en la misma fila, columna o subcuadrícula 3x3.
+4. Ganas cuando completas el tablero correctamente.
+5. Guia de ingreso de datos C para columnas y F para Filas
+===========================================================================
+===========================================================================
+                               JUEGO DE SUDOKU
+===========================================================================
 
-===== REGLAS DE SUDOKU =====
-- Se elige aleatoriamente un tablero de Sudoku 9x9 incompleto.
-- Debes completar los espacios vacíos con números del 1 al 9.
-- No puede haber números repetidos en filas ni columnas.
-- Ganas si completas correctamente el tablero.
-===================================
+  C 0 1 2 | 3 4 5 | 6 7 8
+F ┌-----------------------┐
+0 | 1 2 3 | . . . | 7 8 . |
+1 | 4 5 6 | . . 9 | 1 . 3 |
+2 | 7 8 9 | . 2 . | 4 5 6 |
+  |-------|-------|-------|
+3 | 2 1 4 | 3 6 5 | . 9 7 |
+4 | 3 . 5 | 8 9 7 | . 1 4 |
+5 | 8 . . | 2 . 4 | 3 6 5 |
+  |-------|-------|-------|
+6 | . 3 1 | 6 4 2 | 9 . 8 |
+7 | 6 4 2 | . 7 8 | 5 . . |
+8 | 9 7 . | . . 1 | . 4 2 |
+  └-----------------------┘
 
-    0   1   2   3   4   5   6   7   8
-  ------------------------------------
-0 |   | 5 | 1 | 4 | 6 |   | 4 | 9 | 5 |
-  ------------------------------------
-1 |   |   | 1 | 9 | 8 |   |   |   | 6 |
-  ------------------------------------
-2 |   | 2 |   |   | 1 |   |   |   |   |
-  ------------------------------------
-3 |   |   | 2 | 9 | 7 |   | 5 | 9 |   |
-  ------------------------------------
-4 |   |   |   | 3 | 6 |   |   | 6 |   |
-  ------------------------------------
-5 |   | 3 | 2 |   | 9 | 8 | 3 |   | 7 |
-  ------------------------------------
-6 | 7 | 3 | 5 |   |   | 6 |   | 4 | 6 |
-  ------------------------------------
-7 | 7 | 7 | 7 | 8 |   |   | 1 |   |   |
-  ------------------------------------
-8 | 9 | 9 | 5 | 5 |   |   |   |   | 7 |
-  ------------------------------------
+Ingrese las coordenadas y el número a colocar:
 Ingresa la fila (0-8):
 ```
 ======================================================================
@@ -74,7 +75,7 @@ Ingresa la fila (0-8):
 ## 🚀 Cómo Ejecutar los Juegos
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/Its-issa23/proyecto1_sudoku.git
+   git clone https://github.com/driosoft-pro/programming_Projec-1_Sudoku.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
@@ -98,5 +99,5 @@ Este proyecto está bajo la licencia MIT - Puedes usarlo libremente. 😊
 
 ## Autor
 📌 **By:** Deyton Riascos Ortiz
-            Danna Isabella Mosquera
-            Samuel Izquierdo Bonilla
+            Dana Isabella Mosquera Mosquera
+            Samuel Izquierdo Bonilla 
